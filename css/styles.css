@@ -528,15 +528,17 @@ footer {
 
     .page-section p {
         font-size: 0.9em;
+        line-height: 1.8em;
         margin-bottom: 1.5em;
     }
 
     .page-section li {
         font-size: 0.9em;
+        line-height: 1.8em;
     }
 
     .portfolio-item .portfolio-desc .folio-info h5 {
-        font-size: 1.5em; /* important */
+        font-size: 1.5em; 
     }
 
 }
@@ -556,7 +558,6 @@ footer {
   display: inline-block;
   width: 100%;
 }
-
 
 
 
