@@ -559,5 +559,9 @@ footer {
   width: 100%;
 }
 
-
+.shadow{
+    -webkit-box-shadow: 5px 5px 60px 0px rgba(221,221,221,1);
+    -moz-box-shadow: 5px 5px 60px 0px rgba(221,221,221,1);
+    box-shadow: 5px 5px 60px 0px rgba(221,221,221,1);
+}
 
