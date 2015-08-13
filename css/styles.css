@@ -382,6 +382,11 @@ footer {
     font-weight: 200;
 }
 
+.card {
+    border: 1px solid #cccccc;
+    padding: 1.5em;
+    padding-bottom: 2em;
+}
 
 /* pagination */
 
