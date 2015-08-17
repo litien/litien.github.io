@@ -566,8 +566,12 @@ footer {
 }
 
 .shadow{
-    -webkit-box-shadow: 5px 5px 60px 0px rgba(221,221,221,1);
-    -moz-box-shadow: 5px 5px 60px 0px rgba(221,221,221,1);
-    box-shadow: 5px 5px 60px 0px rgba(221,221,221,1);
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
+    -moz-box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
+    box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
+}
+
+.border{
+    border: solid 1px #eeeeee;
 }
 
