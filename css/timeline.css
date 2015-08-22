@@ -1,5 +1,9 @@
 img { border: 0; max-width: 100%; }
 
+img:hover {
+    opacity: 0.8;
+}
+
 .timeline-header h1 {
   font-size: 1.5em;
   color: #6cc6ed;
@@ -205,8 +209,8 @@ img { border: 0; max-width: 100%; }
   }
 
   p{
-      font-size: 0.9em;
-      line-height: 1.8em;
-      margin-bottom: 1.5em;
-    }
+    font-size: 0.9em;
+    line-height: 1.8em;
+    margin-bottom: 1.5em;
+  }
 }
