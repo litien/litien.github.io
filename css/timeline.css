@@ -122,7 +122,7 @@ img { border: 0; max-width: 100%; }
 /** timeline circle icons **/
 .timeline li .tl-circ {
   position: absolute;
-  top: 23px;
+  top: 32px;
   left: 50%;
   text-align: center;
   background: #6cc6ed;
