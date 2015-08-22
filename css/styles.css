@@ -29,10 +29,11 @@ a {
     transition: all 0.2s linear;
 }
 
-a:hover {
+a:hover,a:focus {
     color: #00a8ca;
     text-decoration: none;
 }
+
 
 hr {
     border-color: #ddd;
