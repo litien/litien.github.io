@@ -90,6 +90,16 @@ img{
     font-weight: 200;
 }
 
+.shadow{
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
+    -moz-box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
+    box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
+}
+
+.border{
+    border: solid 1px #eeeeee;
+}
+
 /*--- Header ---*/
 .header {
     position: fixed;
@@ -338,10 +348,6 @@ footer {
     margin: 50px 0 10px;
 }
 
-.page-section h1 span {
-    font-weight: 200;
-}
-
 .page-section h2 {   
     color: #6cc6ed;
     font-size: 28px;
@@ -544,35 +550,6 @@ footer {
         line-height: 1.8em;
     }
 
-    .portfolio-item .portfolio-desc .folio-info h5 {
-        font-size: 1.5em; 
-    }
-
 }
 
-.controls{
-  padding: 2%;
-  background: #333;
-  color: #eee;
-}
-
-.container{  
-  -webkit-backface-visibility: hidden;
-}
-
-.container: after{
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-.shadow{
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
-    -moz-box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
-    box-shadow: 5px 5px 15px 5px rgba(221,221,221,0.4);
-}
-
-.border{
-    border: solid 1px #eeeeee;
-}
 
