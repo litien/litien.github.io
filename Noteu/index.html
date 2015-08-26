@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>NoteU</title>
+  <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+  <link rel="icon" href="image/icon.png" type="image/ico">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/dropbox.js/0.9.1/dropbox.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="jeditable.js" type="text/javascript" charset="utf-8"></script>
+  <!--Alert message-->
+  <script type='text/javascript' src='jquery.simplemodal.js'></script> 
+  <link type='text/css' href='basic.css' rel='stylesheet' media='screen' />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.5/require.min.js"></script>
+  <script src="//googledrive.com/host/0B147HlW6g510cDdfeFJWM1MwTHM/0.7.1/ItemMirror.min.js"></script>
+  <script type="text/javascript" src="noteu.itemMirror.js"></script>
+</head>
+
+<body>
+  <!-- topbar -->
+  <div id="topbar">
+    <span id="username"></span>  
+    <img src="user.png" width="32" height="32" alt="user" />
+  </div>
+
+  <!--alert mag-->
+  <div id='container' hidden>
+    <div id='content'>
+    <!-- modal content -->
+    <div id="basic-modal-content">
+      <h4 id="alerttitle"></h4>
+      <p id="alertmsg"></p>
+      <button id="confirm">Yes</button>
+      <button id="cancel">Cancel</button>
+    </div>
+    </div>
+  </div>
+
+  <!-- dialog --> 
+  <div id='dialog-container' hidden>
+    <div id='dialog-content'>
+    <!-- modal content -->
+    <div id="dialog-modal-content">
+      <h4 id="dialog-title">Creat new Note</h4>
+      <form id="new-note">
+        <label for="folder-name">Note Name?</label>
+        <input id="folder-name" type="text" value="" class="text" style="width: 250px" />
+        <button id="dialog-create">Create</button>
+        <button id="dialog-cancel">Cancel</button>
+    </form>
+    </div>
+    </div>
+  </div>
+
+  <!-- taskpanel -->
+  <div id="taskpanel">
+    <div id="logo_panel">
+      <h3>NoteU</h3>
+    </div>
+    <div id="notes_panel"></div>
+    <div id="iconlist" >
+      <ol>
+        <li id="newnote"><img  src="image/add1.png" width="40" height="40" style="cursor:pointer;"/></li> 
+        <li id="theme"><img src="image/color-palette.png" width="40" height="40" alt="pleatte" /></li>        
+        <li id="trashcan"><img src="image/bin.png" width="40" height="40" alt="trashcan" style="cursor: pointer;"/></li>   
+      </ol>
+    </div>
+  </div>
+
+  <!-- arrow -->
+  <div id="arrow" style="cursor: pointer;"></div>
+
+  <!--checklist body-->
+  <article id="paper" hidden>
+    <div id="paperbanner">
+      <div id="color">
+        <ul class="tools">
+          <img id="delete" src="image/bin.png" width="40" height="40" alt="trash" style="cursor:pointer;" />
+          <li><a class="yellow" title="set color to yellow"></a></li>
+          <li><a class="blue" title="set color to blue"></a></li>
+          <li><a class="red" title="set color to red"></a></li>
+          <li><a class="green" title="set color to green"></a></li>
+          <img id="up" title="Upper level" src="image/up.png" width="40" height="40" alt="up" style="cursor:pointer;" />
+        </ul>
+      </div>
+    </div>
+    <div id="header">
+      <h1 id = "guid" class="click"></h1>
+    </div>
+    <h2 class="line">Active</h2>
+    <ol id="active"></ol>
+    <div class="line">
+      <form>          
+        <input id="datepicker" type="text" placeholder="add date"/>
+        <input id="new-task-name" type="text" required="required" autofocus="autofocus" placeholder="Want to do....?"/> 
+      </form>
+      <button id="new-task-button">Add</button>
+    </div> 
+    <h2 class="line">Done</h2>
+    <ol id="done"></ol>
+  </article>
+
+  <!--copyright-->
+  <div id="copyright">© Copyright 2013 Created by Chia-Ching Lin, Li-Tien Ou, Shih-Hao Chiu and Yen-Ting Liu. All rights reserved.</div>
+</body>
+</html>
