@@ -21,7 +21,6 @@ p, li { color: #333333; }
 a {
     color: @theme-color;
     text-decoration: none;
-    text-shadow: none;
     -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
@@ -70,7 +69,7 @@ img { display: block; margin: 0 auto; }
 .line-hight-2 { line-height: 2; }
 .font-weight-200 { font-weight: 200; }
 
-/*--- Header ---*/
+////////// Header //////////
 .header {
     position: fixed;
     width: 100%;
@@ -99,7 +98,7 @@ img { display: block; margin: 0 auto; }
     &:hover, &:focus { color: white; background: none; }
 }   
 
-/*---- Nav ----*/
+////////// Nav //////////
 .header .navbar-brand {
     float: left;
     padding: 16px 15px;
@@ -125,7 +124,6 @@ img { display: block; margin: 0 auto; }
 
 .navbar-inverse .navbar-nav > li > a {
     font-size: 1.2em;
-    line-height: normal;
     margin: 17px;
     padding: 6px 10px !important;
     border-radius: 5px;
@@ -164,7 +162,7 @@ img { display: block; margin: 0 auto; }
     line-height: 1.7;
 }
 
-/*--- quote BG ---*/
+////////// landing page //////////
 .bg-parlex {
     background-image: url('../images/banner-bg.jpg');
     background-size: cover;
@@ -176,11 +174,11 @@ img { display: block; margin: 0 auto; }
 
 .parlex-back {
     padding: 30px 0;
-    background-color: rgba(0, 0, 0, 0.37);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #FDFDFD;
 }
 
-/*--- thumbnails ---*/
+////////// thumbnails //////////
 #portfolio {
     background: #f6f6f6;
     
@@ -227,7 +225,7 @@ img { display: block; margin: 0 auto; }
     i  {font-size: 1.4em; }
 }
 
-/*--- footer ---*/
+////////// footer //////////
 footer {
     border-top: 1px solid #e5e5e5;
     padding: 45px 0;
@@ -263,7 +261,7 @@ footer {
     }
 }
 
-/*--- portfolio page ---*/
+////////// portfolio page //////////
 .summary-container {
     background-color: #f7f7f7;
     border-radius: 8px;
@@ -309,7 +307,7 @@ footer {
         font-weight: 400;
     }
     
-    h5 { /* project sub title */
+    h5 {
         font-size: 1em; 
         margin-bottom: 35px;
     }
@@ -329,7 +327,7 @@ footer {
     margin: 1em 0;
 }
 
-/* pagination */
+////////// pagination //////////
 .page {
     font-size: 0.95em;
     display: block;
@@ -391,7 +389,7 @@ footer {
     color: #979797;
 }
 
-/* media */
+////////// media //////////
 @media (min-width: 768px) {
     .header .navbar-brand { padding-left: 0; }
     .navbar-nav { float: right; }
@@ -417,13 +415,13 @@ footer {
     }
     .portfolio-item:hover .portfolio-desc { display: none; }
 
-    /* pagination */
+    // pagination
     .page .bottom_nav_left{ display: none; }
     .page .bottom_nav_right{ width: 110%; text-align: left; }
 
     #quote h3{ 
         font-size: 1em; 
-        margin: -3em 0.8em;
+        margin: -3em 0;
     }
 }
 
@@ -436,4 +434,3 @@ footer {
         li { font-size: 0.9em; line-height: 1.8; }
     }
 }
-
