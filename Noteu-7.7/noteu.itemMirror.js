@@ -15,15 +15,15 @@
         var dropboxItemUtility,
             dropboxXooMLUtility,
             dropboxClient,
-            rootPath = "/DayWeaver Independent Studies/OurSpace/",
-            rootFolder = "OurSpace",
+            rootPath = "/",
+            rootFolder = "",
             rootItemMirror = "",
             namespaceURI = "http://noteU";
 
             // Create DropboxClient
             dropboxClient = new Dropbox.Client({
-                key: "PAQgA58iQUA=|AKSLjv/vu+ymSp0MFxcFnQzXeqJ5jsMTwvE6SMN69w==",
-                sandbox: false
+                key: "lIIemIURNrA=|JZxk4BbHQ6384pHW77rSHyOb44koORg73AKQQ4kd9w==",
+                sandbox: true
             });
             dropboxClient.authDriver(new Dropbox.Drivers.Redirect({
                 rememberUser: true
