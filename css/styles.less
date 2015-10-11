@@ -2,9 +2,17 @@
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
+////////// Variables //////////
 @theme-color: #6cc6ed;
 @theme-color-hover: darken(@theme-color, 20%);
+.transition(@time, @value){
+    -moz-transition: all @time @value;
+    -o-transition: all @time @value;
+    -webkit-transition: all @time @value;
+    transition: all @time @value;
+}
 
+////////// Gloabal Styles //////////
 * {
     margin: 0;
     padding: 0;
@@ -23,11 +31,7 @@ p, li { color: #333333; }
 a {
     color: @theme-color;
     text-decoration: none;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    .transition(0.2s, linear);
     &:hover, &:focus { color: @theme-color-hover; text-decoration: none;}
 }
 
@@ -70,6 +74,7 @@ img { display: block; margin: 0 auto; }
 
 .line-hight-2 { line-height: 2; }
 .font-weight-200 { font-weight: 200; }
+.secPad{ padding: 60px 0; }
 
 ////////// Header //////////
 .header {
@@ -152,10 +157,7 @@ img { display: block; margin: 0 auto; }
     p { font-size: 1.2em; }
 }
 
-.secPad{
-    padding: 60px 0;
-}
-
+////////// Landing Page //////////
 .tileBox p{
     font-size: 16px;
     color: #777777;
@@ -163,7 +165,6 @@ img { display: block; margin: 0 auto; }
     line-height: 1.7;
 }
 
-////////// landing page //////////
 .bg-parlex {
     background-image: url('../images/banner-bg.jpg');
     background-size: cover;
@@ -179,7 +180,7 @@ img { display: block; margin: 0 auto; }
     color: #FDFDFD;
 }
 
-////////// thumbnails //////////
+////////// Thumbnails //////////
 #portfolio {
     background: #f7f7f7;
     
@@ -213,9 +214,9 @@ img { display: block; margin: 0 auto; }
 .portfolio-item:hover .portfolio-desc {
     padding-top: 20%;
     height: 100%;
-    transition: all ease-in-out 0.5s;
     opacity: 1;
     background: rgba(40, 40, 40, 0.8);
+    .transition(0.5s, ease-in-out);
 }
 
 .portfolio-item .portfolio-desc {
@@ -225,7 +226,7 @@ img { display: block; margin: 0 auto; }
     i  {font-size: 1.4em; }
 }
 
-////////// footer //////////
+////////// Footer //////////
 footer {
     border-top: 1px solid #e5e5e5;
     padding: 45px 0;
@@ -265,7 +266,7 @@ footer {
     }
 }
 
-////////// portfolio page //////////
+////////// Portfolio Page //////////
 .summary-container {
     background-color: #f7f7f7;
     border-radius: 8px;
@@ -355,10 +356,7 @@ footer {
     background-position: 98% 50%;
     opacity: 0.7;
 
-    -moz-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    transition: all .4s ease-in;
+    .transition(.4s, ease-in);
     
     &:hover {
     background-repeat: no-repeat;
@@ -376,10 +374,7 @@ footer {
     background-position: 2% 50%;
     opacity: 0.7;
 
-    -moz-transition: all .4s ease-in;
-    -o-transition: all .4s ease-in;
-    -webkit-transition: all .4s ease-in;
-    transition: all .4s ease-in;
+    .transition(.4s, ease-in);
     
     &:hover {
         background-repeat: no-repeat;
