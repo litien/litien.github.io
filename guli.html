@@ -33,7 +33,6 @@
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
                         <li><a href="index.html">PORTFOLIO</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
                         <li><a href="Li-Tien Ou_resume.pdf" target="_blank">RESUME</a></li>
                     </ul>
                 </div>
@@ -289,6 +288,15 @@
 
       ga('create', 'UA-65916031-1', 'auto');
       ga('send', 'pageview');
+    </script>
+
+    <script>
+        $('.topHome').click(function() {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 700);
+            return false;
+        });
     </script>
 </body>
 </html>
