@@ -207,23 +207,21 @@ img { display: block; margin: 0 auto; }
         left: 0;
         top: 0;
         text-align: center;
-        text-transform: uppercase;
     }
 }
 
 .portfolio-item:hover .portfolio-desc {
-    padding-top: 20%;
+    padding-top: 27%;
     height: 100%;
     opacity: 1;
-    background: rgba(40, 40, 40, 0.8);
+    background: rgba(40, 40, 40, 0.7);
     .transition(0.5s, ease-in-out);
 }
 
 .portfolio-item .portfolio-desc {
-    * { color: white; font-weight: bold; }
-    h5 {font-size: 1.6em; }
-    p  {font-size: 0.6em; }
-    i  {font-size: 1.4em; }
+    * { color: white; font-weight: 400; letter-spacing: 1.9px;}
+    h5 {font-size: 1.6em; text-transform: uppercase;}
+    p  {font-size: 0.6em; text-transform: none;}
 }
 
 ////////// Footer //////////
@@ -295,10 +293,10 @@ footer {
     }
     
     h3{ // page section
-        font-size: 1.4em;
+        font-size: 1.6em;
         color: @theme-color;
         margin: 30px 0;
-        padding: 5px 0;
+
         line-height: 1.8;
         font-weight: 400;
         border-bottom: dotted 2px;
