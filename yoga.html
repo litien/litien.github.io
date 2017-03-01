@@ -4,81 +4,61 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Li-Tien Ou | UX & IxD</title>
+    <title>Li-Tien Ou's Portfolio</title>
     <meta name="description" content="Li-Tien Ou Portfolio">
+    <meta name="keywords" content="Li-Tien Ou, UI, UX, User Interface, User Experience, Interaction Designer, UX designer,  Product Designer, University of Washington, Human-Computer Interaction.">
     <meta name="author" content="Li-Tien Ou">
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="font/css/font-awesome.min.css" >
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!-- Fotorama -->
     <link rel="stylesheet" href="js/fotorama-4.6.3/fotorama.css" >
     <script src="js/fotorama-4.6.3/fotorama.js"></script>
-    <!-- pb-slider -->
-    <link rel="stylesheet" href="css/pb-slider.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Litien Ou</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="index.html" class="navbar-brand logo"><b>Litien Ou</b></a>
-                </div>
-
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li><a href="index.html">PORTFOLIO</a></li>
-                        <li><a href="Li-Tien Ou_resume.pdf" target="_blank">RESUME</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <a href="index.html" class="navbar-brand logo"><b class="reverse-text-color"><strong>Litien's</strong> Portfolio</b></a>
         </div>
     </header>
 
-    <section id="#portfolioPage" class="page-section clearfix secPad white">
-        <div class="container">
-            <div class="row mrgn80">
-                <h1 align="center">YogaPanda</h1>
-                <h5 align="center">Startup Weekend 2nd Place</h5>
+    <!--Portfolio-->
+    <section class="page-section">
+        <div class="work_top_area">
+            <h1 class="text-center">YogaPanda</h1>
+            <p class="text-center">Startup Weekend 2nd Place</p>
+        </div>
+    </section>
 
-                <p>YogaPanda is an mobile app that helps yogis find next available classes at the best yoga studios in the Greater Seattle area, book classes directly from phone, pay as you go and save money along the way. During the <a href="http://euroseattle.startupweekend.org/" target="_blank"><b>EuroSeattle Startup Weekend</b></a>, I created the mobile design solution with another designer and collaborated with business owners and developers, and the team won the <b>2nd place</b>. (Live website: <a href="http://yogapanda.co/" target="_blank"><b>http://yogapanda.co/</b></a> )</p>
+    <section class="page-section secPad">
+        <div class="row mrgn">
+            <p>YogaPanda is an mobile app that helps yogis find next available classes at the best yoga studios in the Greater Seattle area, book classes directly from phone, pay as you go and save money along the way. During the <a href="http://euroseattle.startupweekend.org/" target="_blank"><b>EuroSeattle Startup Weekend</b></a>, I created the mobile design solution with another designer and collaborated with business owners and developers, and the team won the <b>2nd place</b>.</p>
+            <br/>
 
-                <p><b>Note:</b> I just rejoined the team on August 2015 and work with the product owner and 2 developers in my spare time. The v1 app you see in the App Store is not fully implemented from design’s perspective. Now I am trying to make it fun and simple!</p>
-                <br/>
+            <p><b>Note:</b> On October 2016, the service is shut down. Read the <a href="https://medium.com/@othmaner/an-honest-introspection-of-a-tech-startup-founder-after-shutting-down-his-company-dbbc4d6a49a2#.a7fzexelw" target="_blank" class="bold-text">startup journey</a> written by the founder Othmane Rahmouni.</p>
 
-                <h4 class="text-center">Download on the App Store</h4>
-                <div align="center">
-                    <a href="https://itunes.apple.com/us/app/yoga-panda/id1016793831?mt=8" target="_blank"><img src="images/download_app.png" width="200" alt="download" /></a>
+            <div class="row summary-container text-center">
+                <div class="col-md-3">
+                    <h4 class="bold-text">ROLE</h4>
+                    <p>Mobile UI/UX Design</p>
                 </div>
-                <br/>
-                <br/>
-
-                <div class="row summary-container text-center">
-                    <div class="col-md-3">
-                        <h4 class="bold-text">ROLE</h4>
-                        <p>Mobile UI/UX Design</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="bold-text">METHODS</h4>
-                        <p>Market Research, Survey, Interview, Sketches, UI Flow, Mockups</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="bold-text">DURATION</h4>
-                        <p>Jan 2015 (2 Days)</p>
-                    </div>
+                <div class="col-md-6">
+                    <h4 class="bold-text">METHODS</h4>
+                    <p>Market Research, Survey, Interview, Sketches, UI Flow, Mockups</p>
                 </div>
-                <br/>
-                <br/>
+                <div class="col-md-3">
+                    <h4 class="bold-text">DURATION</h4>
+                    <p>Jan 2015 (2 Days)</p>
+                </div>
             </div>
 
-            <div class="row block-container">
+           <!--  <div class="row block-container">
                 <div class="apps">
                     <div id="pb_slide" class="pb_slider">
                     
@@ -158,200 +138,199 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <h3>Problem</h3>
+            <p><b>Yoga studios:</b></p>
+            <li>Struggling financially</li>
+            <li>Looking to attract customers</li>
+            <br/>
+            <p><b>Users' voice:</b></p>
+            <li>“I want to do yoga, but I am not sure what class to go to.”
+            <li>“I don’t have time, I am not sure if there is a class exactly.” </li>
+            <li>“It is too expensive, I only go if I can get a Groupon.”</li>
+
+            <h3>Why use YogaPanda?</h3>
+            <li><b>The Right Yoga Class For You:</b> Compare local options, teachers, prices, time, and styles of yoga.</li>
+            <li><b>Pay As You Go:</b> Don't pay every month. Total freedom from subscriptions, no monthly payments.</li>
+            <li><b>Book From The App:</b> Sign up instantly for the next available class.</li>
+
+            <h3>Research</h3>
+            <br/>
+            <h4 align="center">Market Analysis</h4>
+            <img src="images/yoga_research.jpg" alt="market research" width="80%">
+            <br/>
+            <br/>
+
+            <h4 align="center">Survey</h4>
+            <img src="images/yoga_survey.jpg" alt="research" width="80%">
+
+            <h3>Solution</h3>
+            <p class="text-center">Design an app that finds the right yoga class for you! Compare local options, teachers, prices and styles of yoga!</p>
+            <br/>
+
+            <h4 align="center">Brainstorming</h4>
+            <img src="images/yoga_brainstorm.jpg" alt="yoga_brainstorm" width="80%">
+            <br/>
+            <br/>
+
+            <h4 align="center">Sketch</h4>
+            <img src="images/yoga_sketch.jpg" alt="yoga_sketch" width="80%">
+
+            <hr/>
+
+            <img src="images/yoga_wireframe.jpg" alt="yoga_wireframe" width="90%">
+
+            <h3>Award: 2nd place from Startup Weekend Seattle Euro</h3>
+            <p>It is my first Startup Weekend. It was a fun experience to complete the challenge in two days and collaborated with business people, developers, and graphic designer. Meet the team!</p>
+            <br/>
+            <img src="images/yoga_team.jpg" alt="yoga_team" width="80%">
+            <br/>
+
+            <h3>Quick Update</h3>
+            <p>Design iteration never ends, here are some improvements since I rejoined the team on August 2015.</p>
+            <br/>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update1.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update2.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update3.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update4.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update5.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update6.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update7.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img class="border" src="images/yoga_update8.png" alt="yoga_update" width="100%">
+                    <br/>
+                </div>
             </div>
 
-            <div class="row mrgn80">
-                <br/>
-            </div>
-
-            <div class="row mrgn80">
-                <h3>Problem</h3>
-                <p><b>Yoga studios:</b></p>
-                <li>Struggling financially</li>
-                <li>Looking to attract customers</li>
-                <br/>
-                <p><b>Users' voice:</b></p>
-                <li>“I want to do yoga, but I am not sure what class to go to.”
-                <li>“I don’t have time, I am not sure if there is a class exactly.” </li>
-                <li>“It is too expensive, I only go if I can get a Groupon.”</li>
-                <br/>
-
-                <h3>Why use YogaPanda?</h3>
-                <li><b>The Right Yoga Class For You:</b> Compare local options, teachers, prices, time, and styles of yoga.</li>
-                <li><b>Pay As You Go:</b> Don't pay every month. Total freedom from subscriptions, no monthly payments.</li>
-                <li><b>Book From The App:</b> Sign up instantly for the next available class.</li>
-                <br/>
-
-                <h3>Research</h3>
-                <br/>
-                <h4 align="center">Market Analysis</h4>
-                <img src="images/yoga_research.jpg" alt="market research" width="80%">
-                <br/>
-                <br/>
-
-                <h4 align="center">Survey</h4>
-                <img src="images/yoga_survey.jpg" alt="research" width="80%">
-                <br/>
-                <br/>
-
-                <h3>Solution</h3>
-                <p class="text-center">Design an app that finds the right yoga class for you! Compare local options, teachers, prices and styles of yoga!</p>
-                <br/>
-
-                <h4 align="center">Brainstorming</h4>
-                <img src="images/yoga_brainstorm.jpg" alt="yoga_brainstorm" width="80%">
-                <br/>
-                <br/>
-
-                <h4 align="center">Sketch</h4>
-                <img src="images/yoga_sketch.jpg" alt="yoga_sketch" width="80%">
-                <br/>
-                <br/>
-
-                <h2 align="center">Final Design</h2>
-                <img src="images/yoga_wireframe.jpg" alt="yoga_wireframe" width="90%">
-                <br/>
-
-                <h3>Award: 2nd place from Startup Weekend Seattle Euro</h3>
-                <p>It is my first Startup Weekend. It was a super fun experience to complete the challenge in two days and collaborated with business people, developers, and graphic designer! Meet the team! :p</p>
-                <br/>
-                <img src="images/yoga_team.jpg" alt="yoga_team" width="80%">
-                <br/>
-
-                <h3>Quick Update</h3>
-                <p>Design iteration never ends, here are some improvements since I rejoined the team on August 2015!</p>
-                <br/>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update1.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update2.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update3.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update4.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
+            <div class="page">
+                <a href="capstone.html">
+                <div class="bottom_nav_left">
+                    <p>
+                    <span class="direction">PREV</span>
+                    <br/>
+                    <span>Transcend iOS App Design</span>
+                    <br/>
+                    </p>
                 </div>
-                <br/>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update5.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update6.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update7.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="border" src="images/yoga_update8.png" alt="yoga_update" width="100%">
-                        <br/>
-                    </div>
-                </div>
+                </a>
 
-                <div class="page">
-                    <a href="capstone.html">
-                    <div class="bottom_nav_left">
-                        <p>
-                        <span class="direction">PREV</span>
-                        <br/>
-                        <span class="bold-text">Transcend iOS App Design</span>
-                        <br/>
-                        </p>
-                    </div>
-                    </a>
-
-                    <a href="carmax.html">
-                    <div class="bottom_nav_right">             
-                        <p>
-                        <span class="direction">NEXT</span>
-                        <br/>
-                        <span class="bold-text">Carmax Windows Phone App Design</span>
-                        <br/>
-                        </p>
-                    </div>
-                    </a>
+                <a href="carmax.html">
+                <div class="bottom_nav_right">             
+                    <p>
+                    <span class="direction">NEXT</span>
+                    <br/>
+                    <span">Carmax Windows Phone App Design</span>
+                    <br/>
+                    </p>
                 </div>
+                </a>
             </div>
         </div>
     </section>
    
-   <section id="featured-portfolio" class="page-section clearfix secPad">
-        <div class="container">
-            <div class="row">
-                <br/>
-                <div class="portfolio-items clearfix" >
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="recipe.html" class="portfolio-item">
-                            <img src="images/portfolio/recipe.jpg" alt="recipe" />
-                            <div class="portfolio-desc">
-                                <h5>Recipe Sharing<br/><p>iOS App Design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="learn.html" class="portfolio-item">
-                            <img src="images/portfolio/learn.jpg" alt="learn" />
-                            <div class="portfolio-desc">
-                                <h5>LearnTogether<br/><p>Web App design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    <article class="col-md-4 col-sm-6">
-                        <a href="trend.html" class="portfolio-item">
-                            <img src="images/portfolio/trend.jpg" alt="trend" />
-                            <div class="portfolio-desc">
-                                <h5>Trend Micro<br/><p>UI Design Internship</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="capstone.html" class="portfolio-item">
-                            <img src="images/portfolio/capstone.jpg" alt="capstone" />
-                            <div class="portfolio-desc">
-                                <h5>Transcend<br/><p>iOS App Design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="yoga.html" class="portfolio-item">
-                            <img src="images/portfolio/yogapanda.jpg" alt="yogapanda" />
-                            <div class="portfolio-desc">
-                                <h5>Yoga Panda <br/><p>Startup Weekend 2nd Place</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="carmax.html" class="portfolio-item">
-                            <img src="images/portfolio/carmax.jpg" alt="carmax" />
-                            <div class="portfolio-desc">
-                                <h5>CarMax<br/><p>Windows Phone App Design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-                    
+   <!--Featured Portfolio-->
+    <section id="featured-portfolio" class="page-section secPad gray-bg">
+        <div class="container featured-padding-top">
+            <div class="grid">
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/hl.png" alt="hl"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Staff Inbox</span></h2>
+                            <p>Responsive App Redesign <br>HealthLoop</p>
+                            <a href="hl.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/recipe.png" alt="recipe"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Recipe Sharing</span></h2>
+                            <p>iOS App Design <br>Design Challenge</p>
+                            <a href="recipe.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/learn.png" alt="learntogether"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>LearnTogether</span></h2>
+                            <p>Web App Design<br>UW Startup Venture</p>
+                            <a href="learn.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/trend.png" alt="trend"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Trend Micro</span></h2>
+                            <p>UI/UX Design<br>Internship</p>
+                            <a href="trend.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/capstone.jpg" alt="capstone"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Transcend</span></h2>
+                            <p>iOS App Design <br>UW Capstone Project</p>
+                            <a href="capstone.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/yoga.png" alt="yogapanda"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Yoga Panda</span></h2>
+                            <p>iOS App Design <br>Startup Weekend 2nd Place</p>
+                            <a href="yoga.html"></a>
+                        </figcaption>           
+                    </figure>
                 </div>
             </div>
         </div>
@@ -360,9 +339,9 @@
     <footer>
         <div class="container">
             <div class="social text-center">
-                <a href="https://www.behance.net/litien" target="_blank"><i class="fa fa-behance"></i></a>
-                <a href="http://tien0730.tumblr.com" target="_blank"><i class="fa fa-tumblr"></i></a>
-                <a href="https://github.com/litien" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="mailto:tien0730@gmail.com"><i class="fa fa-envelope-o"></i></a>              
+                <a href="Li-Tien Ou_resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a>
+                <a href="https://www.behance.net/litien" target="_blank"><i class="fa fa-behance"></i></a>  
                 <a href="https://www.linkedin.com/pub/li-tien-ou/59/982/302" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
             <div class="clear"></div>

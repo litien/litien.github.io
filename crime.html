@@ -4,253 +4,263 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <title>Li-Tien Ou | UX & IxD</title>
+    <title>Li-Tien Ou's Portfolio</title>
     <meta name="description" content="Li-Tien Ou Portfolio">
+    <meta name="keywords" content="Li-Tien Ou, UI, UX, User Interface, User Experience, Interaction Designer, UX designer,  Product Designer, University of Washington, Human-Computer Interaction.">
     <meta name="author" content="Li-Tien Ou">
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="font/css/font-awesome.min.css" >
     <!-- jQuery -->
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <!-- Fotorama -->
     <link rel="stylesheet" href="js/fotorama-4.6.3/fotorama.css" >
     <script src="js/fotorama-4.6.3/fotorama.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navbar navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Litien Ou</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="index.html" class="navbar-brand logo"><b>Litien Ou</b></a>
-                </div>
-
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li><a href="index.html">PORTFOLIO</a></li>
-                        <li><a href="Li-Tien Ou_resume.pdf" target="_blank">RESUME</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <a href="index.html" class="navbar-brand logo"><b class="reverse-text-color"><strong>Litien's</strong> Portfolio</b></a>
         </div>
     </header>
 
    <!--Portfolio-->
-    <section id="#portfolioPage" class="page-section clearfix secPad white">
-        <div class="container">
-            <div class="row mrgn80">
-                <h1 align="center">Seattle Crime Map</h1>
-                <h5 align="center">Data Visualization</h5>
+   <section class="page-section">
+        <div class="work_top_area">
+            <h1 class="text-center">Seattle Crime Map</h1>
+            <p class="text-center">Data Visualization</p>
+        </div>
+    </section>
 
-                <p>This project was produced for INFX 598 Data Visualization instructed by Professor <a href="https://ischool.uw.edu/people/faculty/jas1208" target="_blank"><b>Jaime Snyder</b></a> at the University of Washington. It's an interactive data visualization of 2014 Seattle crime data. The goal is to help business owners and the general public identify major crime types and numbers among their living areas and then make further decisions.</p>
-                <br/>
+    <section class="page-section secPad">
+        <div class="row mrgn">
+            <p>This project was produced for INFX 598 Data Visualization instructed by Professor <a href="https://ischool.uw.edu/people/faculty/jas1208" target="_blank"><b>Jaime Snyder</b></a> at the University of Washington. It's an interactive data visualization of 2014 Seattle crime data. The goal is to help business owners and the general public identify major crime types and numbers among their living areas and then make further decisions.</p>
 
-                <div class="row summary-container text-center">
-                    <div class="col-md-3">
-                        <h4 class="bold-text">ROLE</h4>
-                        <p>Design / Development</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4 class="bold-text">METHODS</h4>
-                        <p>Sketches, User Testing, Implemented with D3.js</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h4 class="bold-text">DURATION</h4>
-                        <p>March - June 2015</p>
-                    </div>
+            <div class="row summary-container text-center">
+                <div class="col-md-3">
+                    <h4 class="bold-text">ROLE</h4>
+                    <p>Design / Development</p>
                 </div>
-                <br/>
-
-                <h3>Design Process</h3>
-                <li><b>Analyze</b> a dataset from <a href="https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Police-Report-Incident/7ais-f98f" arget="_blank"><b>"Seattle Police Department Police Report Incident"</b></a> and clean unnecessary data.</li> 
-                <li><b>Define</b> the target audience and requirements.</li> 
-                <li><b>Identify</b> the motivation and questions to which the visualization will respond.</li>
-                <li><b>Brainstorm</b> with different visual encoding and graphic design choices through a series of sketches.</li>
-                <li><b>Conduct</b> 5 user testings to find out pros and cons that the visualization can improve on.</li> 
-                <li><b>Iterate</b> and modify visualization in response to evaluation findings.</li>
-                <li><b>Implement</b> the final data visualization with D3.js.</li>
-                <br/>
-
-                <h3>The Audience</h3>
-                <p><b>Business owners</b> usually care about the safety information around their business district, so people who run business in Seattle area are our audience.  Business owners are assumed to have some knowledge about the Seattle area. Knowledge of crime types and the ability of reading maps is required for this group.</p>
-
-                <li>New business owners: plan to open a local store can use this visualization to choose a place.</li>
-                <li>Current business owners: know the crime situation of their living district and make further related decisions for the business.</li> 
-                <br/>
-
-                <p><b>The general public</b> could include families or students who care about their safety in Seattle. People are assumed to have little or basic knowledge about the Seattle area and criminal types.</p>
-
-                <li>People who are trying to find a new place to move in can use the visualization as a reference to select the new living district.</li>
-                <li>People who care about the crime situation in their living district can use the visualization to understand the safety situation.</li>
-                <li>The audience can gain crime occurrence information based on locations and compare among crime types.</li>
-                <br/>
-
-                <h3>Ideation</h3>
-                <p>From previous user studies evaluations, we realized that the users preferred the map view in the visualization. They also mentioned they expected to see an interactive map to learn more detailed information about different districts. Based on these feedbacks, we decided to use the Seattle map as a basic component of the visualization. Viewers can explore the visualizations by mousing over an area in the map in each sketch.
-                </p>
-                <br/>
-
-                <div class="fotorama" data-allowfullscreen="true" data-loop="true" data-width="75%" align="center">
-                    <img src="images/crime_sketch1.png" alt="crime_sketch" data-caption="Seattle crime map with proportion of crime incidents">
-                    <img src="images/crime_sketch2.png" alt="crime_sketch" data-caption="Seattle crime map with parallel coordinates of crime incidents">
-                    <img src="images/crime_sketch3.png" alt="crime_sketch" data-caption="Seattle crime map with bar charts in ranking order of crime incidents">
+                <div class="col-md-6">
+                    <h4 class="bold-text">METHODS</h4>
+                    <p>Sketches, User Testing, Implemented with D3.js</p>
                 </div>
-                <h3>User Testing</h3>
-                <h4>participant selection</h4>
-                <p>5 participants were involved in our usability study. They are all selected from our targeted user groups:</p>
-                <br/>
-                <img src="images/crime_user.jpg" alt="crime_user" width="100%"/>
-                <br/>
-                <br/>
-                <h4>Detail of the protocol</h4>
-                <br/>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="circle"> <i class="fa fa-comments fa-3x"></i></div>
-                        <br/>
-                        <h4 class="text-center">Step1: Introduction</h4>
-                        <p>Introduced the project background and the team, the purpose of the usability testing and methods applied, and the following process to selected participants.</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="circle"> <i class="fa fa-users fa-3x"></i></div>
-                        <br/>
-                        <h4 class="text-center">Step2: User Background</h4>
-                        <p>Understand users’ basic information, experience of using visualization to make a decision, and any  information they are curious about when thinking of the crime visualization.</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="circle"> <i class="fa fa-flask fa-3x"></i></div>
-                        <br/>
-                        <h4 class="text-center">Step3: Testing</h4>
-                        <p>Let participants apply think-aloud method in order to gather general feedbacks, purpose of using, pros & cons of each sketch, and its effectiveness.</p>
-                    </div>
+                <div class="col-md-3">
+                    <h4 class="bold-text">DURATION</h4>
+                    <p>March - June 2015</p>
                 </div>
-                <br/>
+            </div>
 
-                <h3>Iteration</h3>
-                <p>4 of 5 participants said the sketch #2 is the most useful visualization for them to explore the crime situation and make further decisions. According to the feedbacks, here is the list of improvements:</p>
+            <h3>Design Process</h3>
+            <li><b>Analyze</b> a dataset from <a href="https://data.seattle.gov/Public-Safety/Seattle-Police-Department-Police-Report-Incident/7ais-f98f" target="_blank"><b>"Seattle Police Department Police Report Incident"</b></a> and clean unnecessary data.</li> 
+            <li><b>Define</b> the target audience and requirements.</li> 
+            <li><b>Identify</b> the motivation and questions to which the visualization will respond.</li>
+            <li><b>Brainstorm</b> with different visual encoding and graphic design choices through a series of sketches.</li>
+            <li><b>Conduct</b> 5 user testings to find out pros and cons that the visualization can improve on.</li> 
+            <li><b>Iterate</b> and modify visualization in response to evaluation findings.</li>
+            <li><b>Implement</b> the final data visualization with D3.js.</li>
 
-                <li><b>Indication:</b> Low opacity background is added on Parallel Coordinates chart for each district so that it would give the audience a basic idea about the general crime situation in Seattle without clicking anything.</li>
-                <li><b>Interaction:</b> When clicking a district on the map, the area corresponding to the selected area will be highlighted.</li>
-                <li><b>Labeling:</b> For the selected area, the district name and an overall crime occurrence number are added to indicate the area’s detailed information.</li>
-                <li><b>Visual Style:</b> When we showed the concept design with the basic styling, some users felt the black background with the red color chart is a little bit scary, though the initial idea is that darker color scheme would be appropriate for the topic. Hence, white background is applied in the final visualization.</li>
-                <br/>
+            <h3>The Audience</h3>
+            <p><b>Business owners</b> usually care about the safety information around their business district, so people who run business in Seattle area are our audience.  Business owners are assumed to have some knowledge about the Seattle area. Knowledge of crime types and the ability of reading maps is required for this group.</p>
 
-                <h3>Result</h3>
-                <div class="fotorama" data-allowfullscreen="true" data-width="100%" align="center">
-                    <img src="images/crime_final.png" alt="crime_final" width="100%"/>
+            <li>New business owners: plan to open a local store can use this visualization to choose a place.</li>
+            <li>Current business owners: know the crime situation of their living district and make further related decisions for the business.</li> 
+            <br/>
+            <br/>
+
+            <p><b>The general public</b> could include families or students who care about their safety in Seattle. People are assumed to have little or basic knowledge about the Seattle area and criminal types.</p>
+
+            <li>People who are trying to find a new place to move in can use the visualization as a reference to select the new living district.</li>
+            <li>People who care about the crime situation in their living district can use the visualization to understand the safety situation.</li>
+            <li>The audience can gain crime occurrence information based on locations and compare among crime types.</li>
+
+            <h3>Ideation</h3>
+            <p>From previous user studies evaluations, we realized that the users preferred the map view in the visualization. They also mentioned they expected to see an interactive map to learn more detailed information about different districts. Based on these feedbacks, we decided to use the Seattle map as a basic component of the visualization. Viewers can explore the visualizations by mousing over an area in the map in each sketch.
+            </p>
+
+            <div class="fotorama" data-allowfullscreen="true" data-loop="true" data-width="85%" align="center">
+                <img src="images/crime_sketch1.png" alt="crime_sketch" data-caption="Seattle crime map with proportion of crime incidents">
+                <img src="images/crime_sketch2.png" alt="crime_sketch" data-caption="Seattle crime map with parallel coordinates of crime incidents">
+                <img src="images/crime_sketch3.png" alt="crime_sketch" data-caption="Seattle crime map with bar charts in ranking order of crime incidents">
+            </div>
+            <h3>User Testing</h3>
+            <h4>participant selection</h4>
+            <p>5 participants were involved in our usability study. They are all selected from our targeted user groups:</p>
+            <br/>
+            <img src="images/crime_user.jpg" alt="crime_user" width="100%"/>
+            <br/>
+            <br/>
+            <br/>
+            <h4>Detail of the protocol</h4>
+            <br/>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="circle"> <i class="fa fa-comments fa-3x"></i></div>
+                    <br/>
+                    <h4 class="text-center">Step1: Introduction</h4>
+                    <p>Introduced the project background and the team, the purpose of the usability testing and methods applied, and the following process to selected participants.</p>
                 </div>
-                <br/>
-                <br/>
-                <p align="center">Implemented with D3.js. Here is the example of hovering University District on the map.
-                <br/>
-                <br/>
-                <b>[ Website, final report, and code are available upon request. ]</b>
-                </p>
 
-                <div class="page">
-                    <a href="babysteps.html">
-                    <div class="bottom_nav_left">
-                        <p>
-                        <span class="direction">PREV</span>
-                        <br/>
-                        <span class="bold-text">Babysteps Twitter App Prototyping</span>
-                        <br/>
-                        </p>
-                    </div>
-                    </a>
-
-                    <a href="guli.html">
-                    <div class="bottom_nav_right">             
-                        <p>
-                        <span class="direction">NEXT</span>
-                        <br/>
-                        <span class="bold-text">Guli iOS App Marketing</span>
-                        <br/>
-                        </p>
-                    </div>
-                    </a>
+                <div class="col-md-4">
+                    <div class="circle"> <i class="fa fa-users fa-3x"></i></div>
+                    <br/>
+                    <h4 class="text-center">Step2: User Background</h4>
+                    <p>Understand users’ basic information, experience of using visualization to make a decision, and any  information they are curious about when thinking of the crime visualization.</p>
                 </div>
+
+                <div class="col-md-4">
+                    <div class="circle"> <i class="fa fa-flask fa-3x"></i></div>
+                    <br/>
+                    <h4 class="text-center">Step3: Testing</h4>
+                    <p>Let participants apply think-aloud method in order to gather general feedbacks, purpose of using, pros and cons of each sketch, and its effectiveness.</p>
+                </div>
+            </div>
+
+            <h3>Iteration</h3>
+            <p>4 of 5 participants said the sketch #2 is the most useful visualization for them to explore the crime situation and make further decisions. According to the feedbacks, here is the list of improvements:</p>
+            <br/>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Indication</h4> 
+                    <p>Low opacity background is added on Parallel Coordinates chart for each district so that it would give the audience a basic idea about the general crime situation in Seattle without clicking anything.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Color Coding</h4> 
+                    <p>When we showed the concept design with the basic styling, some users felt the black background with the red color chart is a little bit scary. Hence, the white background is applied in the final visualization.</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Labeling</h4> 
+                    <p>For the selected area, the district name and an overall crime occurrence number are added to indicate the area’s detailed information.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Interaction</h4> 
+                    <p>When clicking a specific district on the map, the area corresponding to the selected area will be highlighted.</p>
+                </div>
+            </div>
+
+            <h3>Result</h3>
+            <div class="fotorama" data-allowfullscreen="true" data-width="100%" align="center">
+                <img src="images/crime_final.png" alt="crime_final" width="100%"/>
+            </div>
+            <br/>
+            <br/>
+            <p align="center">Implemented with D3.js. Here is the example of hovering University District on the map.
+            <br/>
+            <br/>
+            <b>[ Website, final report, and code are available upon request. ]</b>
+            </p>
+
+            <div class="page">
+                <a href="babysteps.html">
+                <div class="bottom_nav_left">
+                    <p>
+                    <span class="direction">PREV</span>
+                    <br/>
+                    <span>Babysteps Twitter App Prototyping</span>
+                    <br/>
+                    </p>
+                </div>
+                </a>
+
+                <a href="hl.html">
+                <div class="bottom_nav_right">             
+                    <p>
+                    <span class="direction">NEXT</span>
+                    <br/>
+                    <span>Staff Inbox Redesign</span>
+                    <br/>
+                    </p>
+                </div>
+                </a>
             </div>
         </div>
     </section>
    
-    <!--/.page-section-->
-
-    <section id="featured-portfolio" class="page-section clearfix secPad">
-        <div class="container">
-            <div class="row">
-                <br/>
-                <div class="portfolio-items clearfix" >
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="recipe.html" class="portfolio-item">
-                            <img src="images/portfolio/recipe.jpg" alt="recipe" />
-                            <div class="portfolio-desc">
-                                <h5>Recipe Sharing<br/><p>iOS App Design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="learn.html" class="portfolio-item">
-                            <img src="images/portfolio/learn.jpg" alt="learn" />
-                            <div class="portfolio-desc">
-                                <h5>LearnTogether<br/><p>Web App design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-                    
-                    <article class="col-md-4 col-sm-6">
-                        <a href="trend.html" class="portfolio-item">
-                            <img src="images/portfolio/trend.jpg" alt="trend" />
-                            <div class="portfolio-desc">
-                                <h5>Trend Micro<br/><p>UI Design Internship</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="capstone.html" class="portfolio-item">
-                            <img src="images/portfolio/capstone.jpg" alt="capstone" />
-                            <div class="portfolio-desc">
-                                <h5>Transcend<br/><p>iOS App Design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="yoga.html" class="portfolio-item">
-                            <img src="images/portfolio/yogapanda.jpg" alt="yogapanda" />
-                            <div class="portfolio-desc">
-                                <h5>Yoga Panda <br/><p>Startup Weekend 2nd Place</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-
-                    <article class="col-md-4 col-sm-6">
-                        <a href="carmax.html" class="portfolio-item">
-                            <img src="images/portfolio/carmax.jpg" alt="carmax" />
-                            <div class="portfolio-desc">
-                                <h5>CarMax<br/><p>Windows Phone App Design</p></h5>
-                                <i class="fa fa-plus fa-2x"></i>
-                            </div>
-                        </a>
-                    </article>
-                    
+    <!--Featured Portfolio-->
+    <section id="featured-portfolio" class="page-section secPad gray-bg">
+        <div class="container featured-padding-top">
+            <div class="grid">
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/hl.png" alt="hl"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Staff Inbox</span></h2>
+                            <p>Responsive App Redesign <br>HealthLoop</p>
+                            <a href="hl.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/recipe.png" alt="recipe"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Recipe Sharing</span></h2>
+                            <p>iOS App Design <br>Design Challenge</p>
+                            <a href="recipe.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/learn.png" alt="learntogether"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>LearnTogether</span></h2>
+                            <p>Web App Design<br>UW Startup Venture</p>
+                            <a href="learn.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/trend.png" alt="trend"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Trend Micro</span></h2>
+                            <p>UI/UX Design<br>Internship</p>
+                            <a href="trend.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/capstone.jpg" alt="capstone"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Transcend</span></h2>
+                            <p>iOS App Design <br>UW Capstone Project</p>
+                            <a href="capstone.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/yoga.png" alt="yogapanda"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Yoga Panda</span></h2>
+                            <p>iOS App Design <br>Startup Weekend 2nd Place</p>
+                            <a href="yoga.html"></a>
+                        </figcaption>           
+                    </figure>
                 </div>
             </div>
         </div>
@@ -259,9 +269,9 @@
     <footer>
         <div class="container">
             <div class="social text-center">
-                <a href="https://www.behance.net/litien" target="_blank"><i class="fa fa-behance"></i></a>
-                <a href="http://tien0730.tumblr.com" target="_blank"><i class="fa fa-tumblr"></i></a>
-                <a href="https://github.com/litien" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="mailto:tien0730@gmail.com"><i class="fa fa-envelope-o"></i></a>              
+                <a href="Li-Tien Ou_resume.pdf" target="_blank"><i class="fa fa-file-text-o"></i></a>
+                <a href="https://www.behance.net/litien" target="_blank"><i class="fa fa-behance"></i></a>  
                 <a href="https://www.linkedin.com/pub/li-tien-ou/59/982/302" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
             <div class="clear"></div>
