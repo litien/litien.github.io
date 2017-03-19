@@ -35,77 +35,70 @@
         <div class="work_top_area">
             <h1 class="text-center white-text">Staff Inbox Redesign</h1>
             <p class="text-center white-text">Optimize the process for staff to clean up inbox</p>
-            <img src="images/HL_cover.png" alt="HL_cover" width="20%">
-        </div>
-    </section>
-
-    <section class="page-section">
-        <div class="mrgn">
-            <h3 class="no-underline">Project Background</h3>
-            <p><a href="http://healthloop.com/" target="_blank" class="bold-text">HealthLoop</a> helps the care team stay connected with patients through their surgical journey. As a first responder (a.k.a medical assistant or nurse practitioner), they work with multiple providers and interact with their patients regarding symptoms, comments, and questions.</p>
-            <br/>
-
-			<p>This <b>goal</b> of this redesign project is to improve first responder’s work efficiency by optimizing the process of cleaning up inbox to-dos and making the configuration more accessible and intuitive. The <b>challenge</b> is to accommodate both large scale healthcare systems and small-to-mid size practices to meet new business requirements and minimize the changes to reduce the learning curve.</p>
-            <br/>
-
-            <p>If you are interested in learning more about the thoughts behind the design, shoot me an <a href="mailto:tien0730@gmail.com" class="bold-text">email</a> and let's chat! &#x1F609</p>
-            <br/>
-            <br/>
-        </div>
-    </section>    
-
-     <section class="page-section secPad" style="background-color: #50B3F5;">
-        <div class=" mrgn">
-            <h3 class="text-center no-underline white-text">Design Process</h3>
-            <p class="text-center white-text" style="margin-top: -15px">Make assumptions and test out the idea with users</p>
-            <br/>
-            <br/>
-            <div class="process">
-                <ol class="process-items">
-                    <li class="active">Frame the Problem</li>
-                    <li>Brainstorm on Solutions</li>
-                    <li>Prototype for Usability Testing</li>
-                    <li>Validate the Idea with Users</li>
-                    <li>Iterate on Detailed Design</li>
-                </ol>
-                <canvas id="canvas" width="700" height="70"></canvas>
+            <div class="wow animated fadeIn" data-wow-offset="50">
+                <img src="images/HL_cover.png" alt="HL_cover" width="75%">
             </div>
         </div>
     </section>
 
     <section class="page-section">
         <div class="mrgn row">
-            <h3 class="no-underline text-center">Clean up inbox with flexibility</h3>
-            <div class="col-md-10 col-md-offset-1">
-                <p class="text-center">The new feature of organizing to-dos by providers in addition to symptom severity gives the staff flexibility to clean up inbox based on provider preferences and specialties.</p>
-                <br/>
-            </div>
-            <img class="border shadow" src="images/HL_inbox.png" alt="HL_inbox" width="100%">
-            <hr style="width:50%">
+            <h3>Project Background</h3>
+            <p><a href="http://healthloop.com/" target="_blank" class="bold-text">HealthLoop</a> helps the care team stay connected with patients through their surgical journey. As hospital staff, they work with multiple providers and interact with their patients regarding symptoms, comments, and questions.</p>
+            <br/>
 
-            <h3 class="no-underline text-center">Access to provider list easily</h3>
-            <div class="col-md-10 col-md-offset-1">
-                <p class="text-center">The redesign solves the problem by providing quick entry points and reconstructing the information architecture to make the configuration accessible and easy to find.</p>
-                <br/>
-            </div>
-            <img class="border shadow" src="images/HL_access.png" alt="HL_access" width="100%">
-            <hr style="width:50%">
+			<p>This <b>goal</b> is to improve staff’s work efficiency by optimizing the process of cleaning up to-dos and making the configuration more accessible and intuitive. The <b>challenge</b> is to accommodate different size of healthcare organizations since our business is shifting from small and midsize business (SMB) to enterprise solutions.</p>
 
-            <h3 class="no-underline text-center">Select providers with a clear overview</h3>
-            <div class="col-md-10 col-md-offset-1">
-                <p class="text-center">Whenever adjusting the providers you work with, it provides comprehensive visual indications. This new design also accommodates different health system organizational structures.</p>
-                <br/>
-            </div>
-            <img class="border shadow" src="images/HL_list.png" alt="HL_list" width="100%">
-        </div>
-    </section>
+            <h3>My Role</h3>
+            <p>As the project owner, I’m responsible for the <b>app UI redesign, UX enhancement, and usability testing.</b> I worked with a cross-functional team, including product manager, customer support team, and engineers. Contribution included wireframing, task ﬂow, UI revamp, iterations based on internal critique and user studies.</p>
 
-    <section class="page-section">
-         <div class="mrgn row">
+            <h3>Problems</h3>
+            <h4>1. Staff Workflow</h4>
+            <p>From initial research, the only way of organizing to-dos by patient symptom severity is not convenient for staff users when doctors have different protocols or instructions.</p>
+            <br/>
+            <img class="border" src="images/HL_Problem_Staff Workflow.png" alt="Problem" width="100%">
+            <br/>
+            <br/>
+            <br/>
+
+            <h4>2. Filter mechanism</h4>
+            <p>Staff sometimes use the filter to view patients by provider. After hiding doctors, they forget to switch the toggle back and thus miss following up with patients regarding their symptoms. This can potentially cause patient safety issue.</p>
+            <br/>
+            <!-- <img class="border" src="images/HL_Problem_Filter.png" alt="Problem" width="100%"> -->
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/HL_toggle on.png" alt="Problem" width="100%">
+                    <h6 class="text-center">Example of toggle on - view Dr. Haus's patients</h6>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/HL_toggle off.png" alt="Problem" width="100%">
+                    <h6 class="text-center">Example of toggle off - hide Dr. Haus's patients</h6>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+
+            <h4>3. Low discoverability of important configurations</h4>
+            <p>Provider list is hidden under “Account Preferences” and not easy to find when staff users want to adjust the doctors they work with.</p>
+            <br/>
+            <img class="border" src="images/HL_Problem_IA.png" alt="Problem" width="100%">
+            <br/>
+            <br/>
+            <br/>
+            
+            <h4>4. Lack of scalability of shifting toward enterprise solutions</h4>
+            <p>Provider list is not scalable for large health systems that have more complex organization hierarchy. Staff users also need a better way to deal with large amount of data.</p>
+            <br/>
+            <img class="border" src="images/HL_Problem_Provider list.png" alt="Problem" width="100%">
+            <br/>
+
             <hr>
-            <h3 class="no-underline text-center">Usability Testing</h3>
+            <h3 class="no-underline text-center">Testing Assumptions</h3>
+            <br/>
 
-            <div class="row text-center">
+            <!--            
+                <div class="row text-center">
                 <div class="col-md-4">
                     <h1 class="count">3</h1>
                     <p class="count-text">Tasks</p>
@@ -121,7 +114,7 @@
                     <p class="count-text">UI Changes</p>
                 </div>
             </div>
-            <hr>
+            <hr> -->
 
             <div class="row">
                 <div class="col-md-7">
@@ -132,20 +125,14 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <p>To deepen the knowledge about staff’s behavior and ensure that designs get more effective with each cycle of testing, I established the research plan, defined tasks, recruited participants, and conducted remote usability testing sessions with 6 first responders who are currently using our app.</p>
+                    <p>To deepen the knowledge about staff’s behavior and ensure that designs get more effective with each cycle of testing, I established the research plan, defined tasks, recruited participants, and conducted remote usability testing sessions with 6 current HealthLoop staff users.</p>
                 </div>
             </div>
 
-            <br/>
-            <br/>
-            <h4>Involve engineers early in the process</h4>
-            <p>As the project lead, I shared the usability plan with engineers and invited them to the usability sessions as it’s critical to have the team understand user frustration and needs through one-on-one sessions where a real user performs tasks.</p>
             <hr>
             <h3 class="no-underline text-center">User Feedback</h3>
-            <br/>
-
             <div class="row">
-                <div class="col-md-10 col-md-offset-1" >
+                <div class="col-md-10 col-md-offset-1">
                     <blockquote>
                     <p>It’s helpful when doctors have different protocols or preferences.</p>
                     </blockquote>
@@ -158,12 +145,79 @@
                 </div>
             </div>
 
+            <h3>Final Design</h3>
+            <br/>
+            <br/>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-transition="crossfade" data-autoplay="2500" data-nav="false" data-arrows="false" data-click="false" data-swipe="false" data-width="100%" align="center">
+                        <img src="images/HL_inbox_1.png" alt="HL_inbox">
+                        <img src="images/HL_inbox_2.png" alt="HL_inbox">
+                        <img src="images/HL_inbox_3.png" alt="HL_inbox">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Introduce the new sorting feature</h4>
+                    <p>Incorporate the use case that providers have different instructions or protocols and give staff users flexibility to clean up the inbox.</p>
+                    <br/>
+                    <h4>Get rid of the filter</h4>
+                    <p>Always see the full to-do list coming from patients. No more hidden provider and no more missing info.</p>
+                </div>
+            </div>
             <hr>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-transition="crossfade" data-autoplay="2500" data-nav="false" data-arrows="false" data-click="false" data-swipe="false" data-width="100%" align="center">
+                        <img src="images/HL_inbox_3_mouse.png" alt="HL_inbox">
+                        <img src="images/HL_list_1.png" alt="HL_list">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h4>Make it easier to access provider list</h4>
+                    <p>Provide a quick entry point to make the configuration accessible and easy to find.</p>
+                    <br/>
+                    <h4>Incorporate scalability</h4>
+                    <p>Enable browsing and a two-layer search to support different organizational structures.</p>
+                </div>
+            </div>
+            <hr>
+
             <h3 class="no-underline">Mobile Design</h3>
-            <p>Considering the contextual scenario that first responders usually use desktop in the office, I chose <b>Desktop-First approach</b> as the starting point. After validating the solution, I began to work on mobile design and adjusted the features based on the usage frequency and information architecture.</p>
+            <p>After validating the solution, I began to work on mobile design and adjusted the features based on the usage frequency and information architecture.</p>
             <br/>
             <img src="images/HL_UI flow.png" alt="flow" width="100%">
-            <h6 class="text-center">Some information is obfuscated in this case study.</h6>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <p><b>Mobile Work Example</b></p>
+            <br/>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img src="images/HL_m_list.png" alt="mobile" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/HL_m_list_add.png" alt="mobile" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/HL_m_list_type.png" alt="mobile" width="100%">
+                    <br/>
+                </div>
+                <div class="col-sm-3">
+                    <img src="images/HL_m_list_added.png" alt="mobile" width="100%">
+                    <br/>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <h4 class="text-center">Thanks for reading!</h4>
+            <br/>
             
             <div class="page">
                 <a href="crime.html">
@@ -177,12 +231,12 @@
                 </div>
                 </a>
 
-                <a href="recipe.html">
+                <a href="learn.html">
                 <div class="bottom_nav_right">             
                     <p>
                     <span class="direction">NEXT</span>
                     <br/>
-                    <span>Recipe Sharing iOS App Design</span>
+                    <span>LearnTogether Web App Design</span>
                     <br/>
                     </p>
                 </div>
@@ -210,18 +264,6 @@
                 <div class="col-md-4 col-sm-6">
                     <figure class="effect-sadie">
                         <div class="wow animated fadeIn" data-wow-offset="50">
-                            <img src="images/portfolio/recipe.png" alt="recipe"/>
-                        </div>
-                        <figcaption>
-                            <h2><span>Recipe Sharing</span></h2>
-                            <p>iOS App Design <br>Design Challenge</p>
-                            <a href="recipe.html"></a>
-                        </figcaption>           
-                    </figure>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <figure class="effect-sadie">
-                        <div class="wow animated fadeIn" data-wow-offset="50">
                             <img src="images/portfolio/learn.png" alt="learntogether"/>
                         </div>
                         <figcaption>
@@ -231,20 +273,20 @@
                         </figcaption>           
                     </figure>
                 </div>
-            </div>
-            <div class="grid">
                 <div class="col-md-4 col-sm-6">
                     <figure class="effect-sadie">
                         <div class="wow animated fadeIn" data-wow-offset="50">
-                            <img src="images/portfolio/trend.png" alt="trend"/>
+                            <img src="images/portfolio/recipe.png" alt="recipe"/>
                         </div>
                         <figcaption>
-                            <h2><span>Trend Micro</span></h2>
-                            <p>UI/UX Design<br>Internship</p>
-                            <a href="trend.html"></a>
+                            <h2><span>Recipe Sharing</span></h2>
+                            <p>iOS App Design <br>Design Challenge</p>
+                            <a href="recipe.html"></a>
                         </figcaption>           
                     </figure>
                 </div>
+            </div>
+            <div class="grid">
                 <div class="col-md-4 col-sm-6">
                     <figure class="effect-sadie">
                         <div class="wow animated fadeIn" data-wow-offset="50">
@@ -254,6 +296,18 @@
                             <h2><span>Transcend</span></h2>
                             <p>iOS App Design <br>UW Capstone Project</p>
                             <a href="capstone.html"></a>
+                        </figcaption>           
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <figure class="effect-sadie">
+                        <div class="wow animated fadeIn" data-wow-offset="50">
+                            <img src="images/portfolio/trend.png" alt="trend"/>
+                        </div>
+                        <figcaption>
+                            <h2><span>Trend Micro</span></h2>
+                            <p>UI/UX Design<br>Internship</p>
+                            <a href="trend.html"></a>
                         </figcaption>           
                     </figure>
                 </div>
@@ -319,143 +373,5 @@
             return false;
         });
     </script>
-
-    <script type="text/javascript">
-        var process = $('.process');
-        var canvas = document.getElementById('canvas');
-        var ctx = canvas.getContext('2d');
-
-        var SECTION_WIDTH = 140;
-
-        var sections = [];
-        var create = function(start) {
-          var section = {
-            start: start,
-            width: SECTION_WIDTH,
-            height: 45,
-            hMax: 35,
-            hMod: 0,
-            progress: 0,
-            dot: {
-              x: 0,
-              y: 0
-            }
-          };
-          section.end = section.start + section.width;
-          section.dot.x = section.start + section.width/2;
-          section.dot.y = section.height;
-          sections.push(section);
-            };
-
-            var draw = function(s) {
-              var wMod = s.width * 0.3;
-              ctx.beginPath();
-              ctx.moveTo(s.start, s.height);
-              ctx.bezierCurveTo(
-                s.start+wMod, s.height,
-                s.start+wMod, s.height - s.hMod,
-                s.start + s.width/2, s.height - s.hMod
-              );
-              ctx.bezierCurveTo(
-                s.end-wMod, s.height - s.hMod,
-                s.end-wMod, s.height,
-                s.end, s.height
-              );
-              ctx.lineWidth = 4;
-              ctx.strokeStyle = 'white';
-              ctx.stroke();
-              
-              ctx.beginPath();
-              ctx.fillStyle = 'white';
-              ctx.arc(s.dot.x, s.dot.y, 8, 0, Math.PI * 2);
-              ctx.fill();
-            };
-
-        function quad(progress) {
-          return Math.pow(progress, 2);
-        }
-        function makeEaseOut(delta) { 
-          return function(progress) {
-            return 1 - delta(1 - progress);
-          }
-        }
-        var quadOut = makeEaseOut(quad);
-
-        var bend = function(s) {
-          if(s.progress < s.hMax) {
-            var delta = quadOut(s.progress/s.hMax);
-            s.hMod = s.hMax*delta;
-            s.dot.y = s.height - s.hMax*delta;
-            s.progress++;
-          }
-        };
-        var reset = function(s) {
-          if(s.progress > 0) {
-            var delta = quadOut(s.progress/s.hMax);
-            s.hMod = s.hMax*delta;
-            s.dot.y = s.height - s.hMax*delta;
-            s.progress -= 2;
-          } else {
-            s.hMod = 0;
-            s.dot.y = s.height;
-            s.progress = 0;
-          }
-        };
-
-        var currentSection = 0;
-        process.on('mousemove', function(event) {
-          var section = Math.floor((event.clientX - process.offset().left) / SECTION_WIDTH);
-          currentSection = section;
-          process.find('.active').removeClass('active');
-          process.find('li').eq(section).addClass('active');
-        });
-
-        create(0);
-        create(140);
-        create(280);
-        create(420);
-        create(560);
-
-        var loop = function() {
-          ctx.clearRect(0, 0, canvas.width, canvas.height);
-          
-          sections.forEach(function(s, index) {
-            if(currentSection === index) {
-              bend(s);
-            } else {
-              reset(s);
-            }
-            draw(s);
-          });
-          
-          window.requestAnimationFrame(loop);
-        };
-        loop();
-    </script>
-
-    <script type="text/javascript">
-    $(window).load(function(){
-        if ($(window).width() < 800) {
-            $('.process-items:first').each(function(i) {
-                   $(this).parent().removeClass('process');
-                   $(this).removeClass('process-items');
-                   $('#canvas').remove();
-                   $('li').addClass('white-text');
-               });
-            }
-        });
-
-    $(window).resize(function(){
-        if ($(window).width() < 800) {
-            $('.process-items:first').each(function(i) {
-                   $(this).parent().removeClass('process');
-                   $(this).removeClass('process-items');
-                   $('#canvas').remove();
-                   $('li').addClass('white-text');
-               });
-            }
-        });
-    </script>
-
 </body>
 </html>

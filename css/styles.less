@@ -410,7 +410,7 @@ footer {
     
     h6{ //note
         font-size: 0.9em;
-        color: #bbbbbb;
+        color: #aaaaaa;
         font-weight: 300;
         line-height: 2;
         letter-spacing: 0.015em;
@@ -571,7 +571,11 @@ footer {
     .logo { font-size: 1em; }
     .secPad{ padding: 0.5em 0; }
     .page-section{
-        h1 { font-size: 2.2em; }
+        h1 { font-size: 2.2em; 
+        &.count { 
+            font-size: 4em;
+            }
+        }
         h2 { font-size: 1.9em; }
         h3 { font-size: 1.7em; margin-top: 1.7em; }
         p  { font-size: 1.1em; line-height: 2; margin-bottom: 1.2em; }
@@ -591,7 +595,7 @@ footer {
 
 blockquote {
   background-color: @light-gray;
-  border-left: 4px solid @theme-color;
+  border-left: 3px solid @theme-color;
   margin: 2em 1em;
   padding: 1em 2em;
   font-size: 1.1em;
@@ -599,7 +603,7 @@ blockquote {
   .transition(.4s, ease-in);
     
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.07);
         box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1);
     }
 }
