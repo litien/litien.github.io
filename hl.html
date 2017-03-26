@@ -46,12 +46,12 @@
             <p><a href="http://healthloop.com/" target="_blank" class="bold-text">HealthLoop</a> helps the care team stay connected with patients through their surgical journey. As hospital staff, they work with multiple doctors and interact with their patients regarding symptoms, comments, and questions.</p>
             <br/>
 
-			<p>This <b>goal</b> is to improve staff’s work efficiency by optimizing the process of cleaning up inbox and making the configuration more accessible and intuitive. The <b>challenge</b> is to accommodate different size of healthcare organizations since our business is shifting from small and midsize business (SMB) to enterprise solutions.</p>
+			<p>This <b>goal</b> is to improve staff’s work efficiency by helping them complete their job of responding to patients and shifting responsibility faster. The <b>challenge</b> is to accommodate different size of healthcare organizations since our business is shifting from small and midsize business (SMB) to enterprise solutions.</p>
 
             <div class="row summary-container text-center">
                 <div class="col-md-3">
                     <h4 class="bold-text">ROLE</h4>
-                    <p>Project Lead</p>
+                    <p>Design Lead</p>
                 </div>
                 <div class="col-md-6">
                     <h4 class="bold-text">METHODS</h4>
@@ -64,16 +64,26 @@
             </div>
 
             <h3>My Role</h3>
-            <p>As the project owner, I’m responsible for the <b>app UI revamp, UX enhancement, and usability testing.</b> I worked with a cross-functional team, including product manager, customer support, and engineers. Contribution included wireframing, task ﬂow, UI revamp, iterations based on internal critique and user studies.</p>
+            <p>As the project owner, I’m responsible for the <b>app UI revamp, UX enhancement, and usability testing.</b> I worked with a cross-functional team, including product manager, customer support, and engineers. <b>Contribution</b> included wireframing, task ﬂow, UI revamp, iterations based on internal critique and user studies.</p>
+
+            <h3>The Users</h3>
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="images/HL_persona.png" alt="Persona" width="95%">
+                </div>
+                <div class="col-md-4">
+                    <br/>
+                    <br/>
+                    <p>Throughout the design process, I used the existing <b>staff persona</b> to guide decisions about features, navigation, and interaction. It's also a powerful way to communicate insights about the behavior and pain points of the users.</p>
+                </div>
+            </div>
 
             <h3>Problems</h3>
             <h4>Staff Workflow</h4>
-            <p>From initial research, grouping lists of tasks by patient symptom severity is not convenient enough when staff want to find patients associate with a doctor.</p>
+            <p>From initial research with internal stakeholders, grouping lists of tasks in the inbox by patient symptom severity does not meet the goal when staff want to find patients associate with a doctor.</p>
             <br/>
             <img class="border" src="images/HL_Problem_Staff Workflow.png" alt="Problem" width="100%">
-            <br/>
-            <br/>
-            <br/>
+            <hr>
 
             <h4>Filter mechanism</h4>
             <p>Staff apply the filter to view patients by doctor. However, after filtering out doctors, staff forget to switch it back. Therefore, no one takes care of the patients because their information is hidden.</p>
@@ -88,31 +98,33 @@
                     <h6 class="text-center">Example of toggle off - hide patients of Dr. Haus</h6>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
+            <hr>
 
             <h4>Low discoverability of important configurations</h4>
-            <p>It's not easy for staff to adjust the doctors they work with because the entry point is hidden under the navigation system.</p>
+            <p>As the filter performs the function of displaying and temperately hiding doctors. I went further to exam the interdependency of the app, which is the configuration of handling the doctor list. And I found it's not easy for staff to adjust the doctors they work with because this feature is hidden under the navigation system.</p>
             <br/>
             <img class="border" src="images/HL_Problem_IA.png" alt="Problem" width="100%">
-            <br/>
-            <br/>
-            <br/>
+            <hr>
             
             <h4>Lack of scalability</h4>
             <p>Doctor list is not scalable for health systems that have more complex organization hierarchy. Staff users also need a better way to deal with large amount of data.</p>
             <br/>
             <img class="border" src="images/HL_Problem_ProviderList.png" alt="Problem" width="100%">
             <br/>
+        </div>
+    </section>
 
-            <hr>
+    <section class="page-section gray-bg">
+        <div class="mrgn row">
+            <br/>
             <h3 class="no-underline text-center">User Testing</h3>
+            <p class="text-center" style="margin-top: -24px">Validate assumptions with users</p>
+            <br/>
             <br/>
 
             <div class="row">
                 <div class="col-md-7">
-                    <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-width="85%" align="center">
+                    <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-width="90%" align="center">
                         <img src="images/HL_usability1.png" alt="HL_usability" data-caption="Remote user sessions">
                         <img src="images/HL_usability2.png" alt="HL_usability" data-caption="Perform tasks using GoToMeeting">
                         <img src="images/HL_prototype.png" alt="HL_prototype" data-caption="Clickable prototype with InVision">
@@ -122,8 +134,13 @@
                     <p>To deepen the knowledge about staff users' behavior and gather feedback about the new UI changes, I established the research plan, defined tasks, recruited participants, and conducted remote user testing sessions with 6 current HealthLoop staff users to validate the assumptions.</p>
                 </div>
             </div>
-            <hr>
+         </div>
+         <br/>
+         <br/>
+    </section>
 
+    <section class="page-section">
+        <div class="mrgn row">
             <h3 class="no-underline text-center">User Feedback</h3>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
@@ -188,19 +205,23 @@
 
             <br/>
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-md-3">
+                    <p>Removing providers</p>
                     <img src="images/HL_m_list.png" alt="mobile" width="100%">
                     <br/>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3">
+                    <p>Adding providers</p>
                     <img src="images/HL_m_list_add.png" alt="mobile" width="100%">
                     <br/>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3">
+                    <p>Adding - by search</p>
                     <img src="images/HL_m_list_type.png" alt="mobile" width="100%">
                     <br/>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-md-3">
+                    <p>Provider added</p>
                     <img src="images/HL_m_list_added.png" alt="mobile" width="100%">
                     <br/>
                 </div>

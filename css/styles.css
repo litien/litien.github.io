@@ -328,7 +328,7 @@ footer {
   border-bottom: none;
 }
 .page-section h4 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #6cc6ed;
   margin: 10px 0;
   line-height: 1.8;
@@ -553,7 +553,7 @@ blockquote {
   transition: all 0.4s ease-in;
 }
 blockquote:hover {
-  transform: scale(1.07);
+  transform: scale(1.03);
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
 }
 blockquote:before {
