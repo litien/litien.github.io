@@ -43,7 +43,7 @@
 
     <section class="page-section secPad">
         <div class="mrgn row">
-            <p><a href="http://healthloop.com/" target="_blank" class="bold-text">HealthLoop</a> helps the care team stay connected with patients through their surgical journey. As hospital staff, they work with multiple doctors and interact with their patients regarding symptoms, comments, and questions.</p>
+            <p><a href="http://healthloop.com/" target="_blank" class="bold-text">HealthLoop</a> helps the care team stay connected with patients through their surgical journey. As hospital staff, they work with multiple doctors (providers) and interact with their patients regarding symptoms, comments, and questions.</p>
             <br/>
 
 			<p>This <b>goal</b> is to improve staff’s work efficiency by helping them complete their job of responding to patients and shifting responsibility faster. The <b>challenge</b> is to accommodate different size of healthcare organizations since our business is shifting from small and midsize business (SMB) to enterprise solutions.</p>
@@ -76,18 +76,19 @@
                     <br/>
                     <br/>
                     <p>Throughout the design process, I used the existing <b>staff persona</b> to guide decisions about features, navigation, and interaction. It's also a powerful way to communicate insights about the behavior and pain points of the users.</p>
+                    <h6>Note: persona details are omitted in this case study.</h6>
                 </div>
             </div>
 
             <h3>Problems</h3>
-            <h4>Staff Workflow</h4>
+            <h4>Problem #1: Staff Workflow</h4>
             <p>From initial research with internal stakeholders, grouping lists of tasks in the inbox by patient symptom severity does not meet the goal when staff want to find patients associate with a doctor.</p>
             <br/>
             <img class="border" src="images/HL_Problem_Staff Workflow.png" alt="Problem" width="100%">
             <hr>
 
-            <h4>Filter mechanism</h4>
-            <p>Staff apply the filter to view patients by doctor. However, after filtering out doctors, staff forget to switch it back. Therefore, no one takes care of the patients because their information is hidden.</p>
+            <h4>Problem #2: Filter mechanism</h4>
+            <p>Staff apply the filter to view patients by doctor. However, after filtering out doctors, staff forget to switch it back. They also tend to ignore the indication of showing numbers of providers at the bottom of the inbox. Therefore, no one takes care of certain patients because their information is hidden. </p>
             <br/>
             <div class="row">
                 <div class="col-md-6">
@@ -101,13 +102,13 @@
             </div>
             <hr>
 
-            <h4>Low discoverability of important configurations</h4>
+            <h4>Problem #3: Low discoverability of important configurations</h4>
             <p>As the filter performs the function of displaying and temperately hiding doctors. I went further to exam the interdependency of the app, which is the configuration of handling the doctor list. And I found it's not easy for staff to adjust the doctors they work with because this feature is hidden under the navigation system.</p>
             <br/>
             <img class="border" src="images/HL_Problem_IA.png" alt="Problem" width="100%">
             <hr>
             
-            <h4>Lack of scalability</h4>
+            <h4>Problem #4: Lack of scalability</h4>
             <p>Doctor list is not scalable for health systems that have more complex organization hierarchy. Staff users also need a better way to deal with large amount of data.</p>
             <br/>
             <img class="border" src="images/HL_Problem_ProviderList.png" alt="Problem" width="100%">
@@ -158,7 +159,7 @@
             </div>
 
             <h3>Solution</h3>
-            <h4>Introduce the new sorting feature</h4>
+            <h4>Solution #1: Introduce the new sorting feature</h4>
             <p>Incorporate the use case that providers have different instructions or protocols and help staff increase efficiency to get things done.</p>
             <br/>
             <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-transition="crossfade" data-autoplay="2500" data-nav="false" data-arrows="false" data-click="false" data-swipe="false" data-width="100%" align="center">
@@ -167,7 +168,7 @@
             </div>
 
             <hr>
-            <h4>Get rid of the filter</h4>
+            <h4>Solution #2: Get rid of the filter</h4>
             <p>Have full control and always see the completed to-do list coming from patients. No more hidden doctor and no more missing information.</p>
             <br/>
             <div class="row">
@@ -180,7 +181,7 @@
             </div>
             <hr>
 
-            <h4>Make it easier to access the doctor list</h4>
+            <h4>Solution #3: Make it easier to access the doctor list</h4>
             <p>Provide a quick entry point to make the important configuration accessible and easy to find.</p>
             <br/>
             <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-transition="crossfade" data-autoplay="2500" data-nav="false" data-arrows="false" data-click="false" data-swipe="false" data-width="100%" align="center">
@@ -189,7 +190,7 @@
             </div>
             <hr>
 
-            <h4>Incorporate scalability</h4>
+            <h4>Solution #4: Incorporate scalability</h4>
             <p>Improve browsing and enable scoped search so that staff in a large health system can switch between department and organization level.</p>
             <br/>
             <img src="images/HL_list_1.png" alt="HL_list" width="100%">
