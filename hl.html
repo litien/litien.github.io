@@ -43,10 +43,10 @@
 
     <section class="page-section secPad">
         <div class="mrgn row">
-            <p><a href="http://healthloop.com/" target="_blank" class="bold-text">HealthLoop</a> helps the care team stay connected with patients through their surgical journey. As hospital staff, they work with multiple doctors (providers) and interact with their patients regarding symptoms, comments, and questions.</p>
+            <p><a href="http://healthloop.com/" target="_blank" class="bold-text">HealthLoop</a> helps the care team stay connected with patients through their surgical journey. As hospital staff, they work with multiple doctors (a.k.a. providers) and interact with their patients regarding symptoms, comments, and questions.</p>
             <br/>
 
-			<p>This <b>goal</b> is to improve staff’s work efficiency by helping them complete their job of responding to patients and shifting responsibility faster. The <b>challenge</b> is to accommodate different size of healthcare organizations since our business is shifting from small and midsize business (SMB) to enterprise solutions.</p>
+			<p>This <b>goal</b> is to improve staff’s work efficiency by helping them complete their job of responding to patients and shifting responsibility faster. The <b>challenge</b> is to accommodate different size of healthcare organizations since our business is transferring from small and midsize business (SMB) to enterprise solutions.</p>
 
             <div class="row summary-container text-center">
                 <div class="col-md-3">
@@ -82,13 +82,13 @@
 
             <h3>Problems</h3>
             <h4>Problem #1: Staff Workflow</h4>
-            <p>From initial research with internal stakeholders, grouping lists of tasks in the inbox by patient symptom severity does not meet the goal when staff want to find patients associate with a doctor.</p>
+            <p>From initial investigation with internal stakeholders, grouping lists of tasks in the inbox by patient symptom severity does not meet the goal when staff want to find patients associate with a doctor.</p>
             <br/>
             <img class="border" src="images/HL_Problem_Staff Workflow.png" alt="Problem" width="100%">
             <hr>
 
             <h4>Problem #2: Filter mechanism</h4>
-            <p>Staff apply the filter to view patients by doctor. However, after filtering out doctors, staff forget to switch it back. They also tend to ignore the indication of showing numbers of providers at the bottom of the inbox. Therefore, no one takes care of certain patients because their information is hidden. </p>
+            <p>Staff apply the filter to view patients by doctor. However, they forget they’ve filtered the list and tend to ignore the filter status reminder at the bottom of the inbox. Therefore, no one takes care of certain patients because their information is hidden.</p>
             <br/>
             <div class="row">
                 <div class="col-md-6">
@@ -120,20 +120,18 @@
         <div class="mrgn row">
             <br/>
             <h3 class="no-underline text-center">User Testing</h3>
-            <p class="text-center" style="margin-top: -24px">Validate assumptions with users</p>
             <br/>
             <br/>
 
             <div class="row">
                 <div class="col-md-7">
                     <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-width="90%" align="center">
-                        <img src="images/HL_usability1.png" alt="HL_usability" data-caption="Remote user sessions">
-                        <img src="images/HL_usability2.png" alt="HL_usability" data-caption="Perform tasks using GoToMeeting">
                         <img src="images/HL_prototype.png" alt="HL_prototype" data-caption="Clickable prototype with InVision">
+                        <img src="images/HL_usability2.png" alt="HL_usability" data-caption="Perform tasks using GoToMeeting">
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <p>To deepen the knowledge about staff users' behavior and gather feedback about the new UI changes, I established the research plan, defined tasks, recruited participants, and conducted remote user testing sessions with 6 current HealthLoop staff users to validate the assumptions.</p>
+                    <p>To deepen the knowledge about staff users' behavior and gather feedback about the new changes, I established the research plan, defined tasks, recruited participants, and conducted remote user testing sessions with <b>6 staff users</b> who currently use our app  to validate the ideas.</p>
                 </div>
             </div>
          </div>
@@ -160,7 +158,7 @@
 
             <h3>Solution</h3>
             <h4>Solution #1: Introduce the new sorting feature</h4>
-            <p>Incorporate the use case that providers have different instructions or protocols and help staff increase efficiency to get things done.</p>
+            <p>Incorporate the use case that staff users work for several doctors with different instructions or protocols. Therefore, users get jobs done faster without switching gears.</p>
             <br/>
             <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-transition="crossfade" data-autoplay="2500" data-nav="false" data-arrows="false" data-click="false" data-swipe="false" data-width="100%" align="center">
                 <img src="images/HL_inbox_1.png" alt="HL_inbox">
@@ -169,7 +167,7 @@
 
             <hr>
             <h4>Solution #2: Get rid of the filter</h4>
-            <p>Have full control and always see the completed to-do list coming from patients. No more hidden doctor and no more missing information.</p>
+            <p>Get a clear sense of how many doctors on the list and have full control by seeing the completed to-do list coming from patients. No more hidden doctor and no more missing information.</p>
             <br/>
             <div class="row">
                 <div class="col-md-6">
@@ -182,7 +180,7 @@
             <hr>
 
             <h4>Solution #3: Make it easier to access the doctor list</h4>
-            <p>Provide a quick entry point to make the important configuration accessible and easy to find.</p>
+            <p>Provide a quick entry point to make the important configuration accessible and easy to find. Based on the user testing, 100% of the users clicked on the new quick entry point in the inbox to access the doctor list, and no one tried to look around the navigation menu.</p>
             <br/>
             <div class="fotorama" data-allowfullscreen="false" data-loop="true" data-transition="crossfade" data-autoplay="2500" data-nav="false" data-arrows="false" data-click="false" data-swipe="false" data-width="100%" align="center">
                 <img src="images/HL_inbox_3_mouse.png" alt="HL_inbox">
@@ -200,38 +198,24 @@
             <p>After validating the solution with users and polished the detailed design for the desktop version, I began to work on mobile design and adjusted the features based on the usage frequency and information architecture.</p>
             <br/>
             <img src="images/HL_UI flow.png" alt="flow" width="100%">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-
-            <br/>
-            <div class="row">
-                <div class="col-md-3">
-                    <p>Removing providers</p>
-                    <img src="images/HL_m_list.png" alt="mobile" width="100%">
-                    <br/>
-                </div>
-                <div class="col-md-3">
-                    <p>Adding providers</p>
-                    <img src="images/HL_m_list_add.png" alt="mobile" width="100%">
-                    <br/>
-                </div>
-                <div class="col-md-3">
-                    <p>Adding - by search</p>
-                    <img src="images/HL_m_list_type.png" alt="mobile" width="100%">
-                    <br/>
-                </div>
-                <div class="col-md-3">
-                    <p>Provider added</p>
-                    <img src="images/HL_m_list_added.png" alt="mobile" width="100%">
-                    <br/>
-                </div>
+            <hr>
+            <div class="mrgn">
+                <h4 class="text-center">Make important things fast</h4>
+                <p>In the navigation drawer, “Editing provider list” was moved one layer up from the setting so it gets better visibility.</p>
+                <br/>
+                <img src="images/HL_m1.png" alt="UI" width="100%">
             </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+            <div class="mrgn">
+                <h4 class="text-center">Minimize anxiety</h4>
+                <p>This is designed to support staff users who are anxious about making mistakes in the transition process. By separating major tasks and providing clear indications, it reduces users' congnitive load.</p>
+            </div>
+            <img src="images/HL_m2.png" alt="UI" width="100%">
             <br/>
-            <br/>
-            <br/>
-            <h4 class="text-center">Thanks for reading!</h4>
             <br/>
             
             <div class="page">
