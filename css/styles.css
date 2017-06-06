@@ -381,6 +381,9 @@ footer {
 .blue-gradient-bg {
   background-image: linear-gradient(120deg, #7BE0FF 0%, #66a6ff 100%);
 }
+.pink-gradient-bg {
+  background-image: linear-gradient(120deg, #FFAFBD 0%, #ffc3a0 100%);
+}
 .blue-bg {
   background-image: linear-gradient(-225deg, #7DE2FC 0%, #1D8FE1 48%, #625EB1 100%);
 }
