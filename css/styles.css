@@ -395,12 +395,12 @@ footer {
   background: linear-gradient(to left, #FFAFBD, #ffc3a0);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-.green-gradient-bg {
-  background: #2BC0E4;
+.cg-gradient-bg {
+  background: #1fa2ff;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #49B8DE, #CDF5ED);
+  background: -webkit-linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #49B8DE, #CDF5ED);
+  background: linear-gradient(to bottom, #1FA2FF, #12d8fa, #1CE6ED);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .card {
@@ -415,32 +415,6 @@ footer {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-}
-.process {
-  width: 700px;
-  margin: 3em auto;
-  cursor: default;
-}
-.process-items {
-  display: table;
-  margin: 0 0 10px;
-  padding: 0;
-  list-style-type: none;
-  font-size: 1.1em;
-  text-align: center;
-}
-.process-items li {
-  color: white;
-  display: table-cell;
-  width: 140px;
-  vertical-align: bottom;
-  line-height: 1.5;
-  transform: scale(0.75) translateY(40px);
-  transform-origin: bottom center;
-  transition: transform .5s;
-}
-.process-items li.active {
-  transform: scale(1) translateY(0);
 }
 .page {
   font-size: 0.95em;
