@@ -83,6 +83,9 @@ img {
   -moz-box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
 }
+.dark-gray {
+  color: #999999 !important;
+}
 .secPad {
   padding: 2em 0;
 }
