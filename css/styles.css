@@ -365,7 +365,7 @@ footer {
   font-size: 1.1em;
   line-height: 2;
   font-weight: 300;
-  /*letter-spacing: 0.015em;*/
+  letter-spacing: 0.02em;
   color: #333333;
 }
 .page-section p.count-text,
